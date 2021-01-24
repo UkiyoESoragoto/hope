@@ -1,6 +1,5 @@
 import sys
-from PyQt5.QtWidgets import (
-    QDesktopWidget,
+from PySide6.QtWidgets import (
     QLabel,
     QGridLayout,
 )
@@ -50,6 +49,4 @@ class About(Widget):
 
     def center(self):
         qr = self.frameGeometry()
-        cp = QDesktopWidget().availableGeometry().center()
-        qr.moveCenter(cp)
         self.move(qr.topLeft())

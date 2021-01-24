@@ -2,10 +2,9 @@ import os
 import sys
 
 import arrow
-from PyQt5.QtCore import QSettings, QUrl
-from PyQt5.QtGui import QDesktopServices
-from PyQt5.QtWidgets import QMessageBox
-
+from PySide6.QtCore import QSettings, QUrl
+from PySide6.QtGui import QDesktopServices
+from PySide6.QtWidgets import QMessageBox
 
 def app_settings():
     return QSettings('UkiyoESoragoto', 'hope')
@@ -23,7 +22,8 @@ def resource_path(relative_path):
 
 def open_url(url: str):
     try:
-        QDesktopServices.openUrl(QUrl(url))
+        # QDesktopServices.openUrl(QUrl(url))
+        pass
     except Exception as e:
         msg = QMessageBox()
         msg.setIcon(QMessageBox.Critical)

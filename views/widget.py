@@ -1,8 +1,8 @@
-from PyQt5.QtCore import QSettings, Qt
-from PyQt5.QtGui import QKeySequence
-from PyQt5.QtWidgets import (
+from PySide6.QtCore import QSettings, Qt
+from PySide6.QtGui import (QKeySequence,
+    QShortcut)
+from PySide6.QtWidgets import (
     QWidget,
-    QShortcut,
     QApplication,
 )
 

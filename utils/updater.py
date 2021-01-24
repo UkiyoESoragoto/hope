@@ -1,13 +1,13 @@
 from time import sleep
 
 import requests
-from PyQt5.QtCore import QThread, pyqtSignal
+from PySide6.QtCore import QThread, Signal
 
 from config import VERSION
 
 
 class Updater(QThread):
-    check = pyqtSignal(dict)
+    check = Signal(dict)
 
     def run(self):
         while 1:

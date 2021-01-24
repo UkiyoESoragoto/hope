@@ -2,15 +2,14 @@ import sys
 from time import sleep
 
 import arrow
-from PyQt5.QtCore import Qt, QThread, pyqtSignal
-from PyQt5.QtGui import QIcon, QKeySequence
-from PyQt5.QtWidgets import (
+from PySide6.QtCore import Qt, QThread, Signal
+from PySide6.QtGui import (QIcon, QKeySequence,
+    QShortcut,    QAction)
+from PySide6.QtWidgets import (
     QMainWindow,
     QFrame,
-    QAction,
     QSystemTrayIcon,
     QMenu,
-    QShortcut,
     QApplication,
     QMessageBox,
 )
@@ -25,7 +24,7 @@ from views.setting import Setting
 class ForHope(QThread):
     """Runs a counter thread.
     """
-    countChanged = pyqtSignal(int)
+    countChanged = Signal(int)
 
     def run(self):
         settings = app_settings()
@@ -219,9 +218,10 @@ class MainWindow(QMainWindow):
         self.calc = new
 
     def start_to_check_update(self):
-        check = Updater()
-        check.check.connect(self.show_update_info)
-        check.start()
+        pass
+        # check = Updater()
+        # check.check.connect(self.show_update_info)
+        # check.start()
 
         # timer = QTimer(self)
         # timer.timeout.connect(self.check_update)

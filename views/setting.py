@@ -1,7 +1,6 @@
 import arrow
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (
-    QDesktopWidget,
+from PySide6.QtCore import Qt
+from PySide6.QtWidgets import (
     QGridLayout,
     QLabel,
     QLineEdit,
@@ -142,8 +141,6 @@ class Setting(Widget):
 
     def center(self):
         qr = self.frameGeometry()
-        cp = QDesktopWidget().availableGeometry().center()
-        qr.moveCenter(cp)
         self.move(qr.topLeft())
 
     def init_settings(self):

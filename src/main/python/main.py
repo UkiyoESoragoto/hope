@@ -1,6 +1,6 @@
 import sys
 
-from PyQt5.QtGui import QIcon
+from PySide6.QtGui import QIcon
 from fbs_runtime.application_context import ApplicationContext
 
 from views import main

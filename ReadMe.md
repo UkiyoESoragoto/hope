@@ -16,11 +16,6 @@ https://github.com/UkiyoESoragoto/hope
 
 https://gitee.com/UkiyoESoragoto/hope
 
-图标原图：
-![HOPE](media/Hope.jpg)
-《龙珠·改》
-另一个未来的布尔玛在时光机器上写下的HOPE
-
 ---
 
 软件创意来自新浪微博某用户，他制作过一个C#版本，名叫"盼头"……嗯，我记不得了在哪儿看的了
@@ -31,30 +26,6 @@ https://gitee.com/UkiyoESoragoto/hope
 
 A lite tool for hope, it will remind you when you will get off work.
 A hope for go home.
-
----
-
-
-### 使用说明 / How to use
-
-
-按下 Cmd + r 加速（刷新）
-
-按下 Cmd + , 打开设置
-
-按下 Cmd + q 退出
-
-请在Linux系统下使用Ctrl键替换Cmd
-
-Windows下没有快捷键
-
-Press Cmd + r to speed up(refresh)
-
-Press Cmd + , to open settings
-
-Press Cmd + q to quit
-
-Use Ctrl key to replace Cmd on Linux
 
 ---
 
@@ -85,3 +56,11 @@ Use Ctrl key to replace Cmd on Linux
 [Github](https://github.com/UkiyoESoragoto/hope/releases/)
 
 [Gitee](https://gitee.com/UkiyoESoragoto/hope/releases/)
+
+
+---
+
+# 图标原图：
+![HOPE](media/Hope.jpg)
+《龙珠·改》
+另一个未来的布尔玛在时光机器上写下的HOPE
